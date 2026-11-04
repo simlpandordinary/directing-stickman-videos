@@ -17,13 +17,91 @@ Turn topics, requirements, articles or scripts into stickman videos. Director mo
 ## 目录结构
 
 ```
-['SKILL.md', 'agents/openai.yaml', 'assets/b1/ATTRIBUTION.md', 'assets/b1/LUCIDE-LICENSE.txt', 'assets/b1/approved-2026-10-23-contact-sheet.png', 'assets/b1/approved-2026-10-23-motion-sheet.png', 'assets/b1/approved-2026-10-23.mp4', 'assets/b1/approved-2026-10-24-longform-contact-sheet.jpg', 'assets/b1/approved-baseline.json', 'assets/b1/approved-production-standard.json', 'assets/b1/calendar-crayon.png', 'assets/b1/camera-handdrawn.png', 'assets/b1/character-acting-reference.png', 'assets/b1/character-pose-sheet-v6.png', 'assets/b1/clapper-crayon.png', 'assets/b1/idea-bulb-crayon.png', 'assets/b1/idea-note-crayon.png', 'assets/b1/open-source-crayon.png', 'assets/b1/script-page-crayon.png', 'assets/b1/youtube-crayon.png', 'assets/b2/approved-style-board.jpg', 'assets/b2/approved-style-board.json', 'assets/b3/accepted-chair-motion.mp4', 'assets/b3/accepted-chair.png', 'assets/b3/accepted-dog-motion.mp4', 'assets/b3/accepted-dog.png', 'assets/b3/accepted-implementation-board.jpg', 'assets/b3/reference-manifest.json', 'assets/fonts/Caveat.ttf', 'assets/fonts/NotoSans.ttf', 'assets/fonts/OFL-Caveat.txt', 'assets/fonts/OFL-NotoSans.txt', 'examples/b1/narration.m4a', 'examples/b1/project.json', 'package-lock.json', 'package.json', 'references/a6-finishing.md', 'references/amber-noir.md', 'references/autopilot-production-qa.md', 'references/autopilot-runtime.md', 'references/autopilot.md', 'references/b1-minimal-handdrawn.md', 'references/b1-production-qa.md', 'references/b2-colorful-handdrawn.md', 'references/b3-television.md', 'references/cozy-storytelling.md', 'references/examples.md', 'references/getting-started.md', 'references/historical-cartoon.md', 'references/omni-flash-prompt-contract.md', 'references/prehistoric-dark-comedy.md', 'references/storyboard-template.md', 'references/style-catalog.md', 'references/thumbnail-publishing-kit.md', 'references/voice-continuity.md', 'scripts/a6_finish.py', 'scripts/align_captions.py', 'scripts/autopilot-core.mjs', 'scripts/autopilot-render.mjs', 'scripts/autopilot.mjs', 'scripts/b3-graphics.mjs', 'scripts/gemini-media.mjs', 'tests/b3-reference-pack.test.mjs', 'tests/b3-runtime.test.mjs', 'tests/runtime.test.mjs', 'LICENSE', 'README.upstream.md', 'CHANGELOG.upstream.md']
+├── CHANGELOG.upstream.md
+├── LICENSE
+├── README.upstream.md
+├── SKILL.md
+├── package-lock.json
+├── package.json
+├── tests/
+├── b3-reference-pack.test.mjs
+├── b3-runtime.test.mjs
+└── runtime.test.mjs
+├── scripts/
+├── a6_finish.py
+├── align_captions.py
+├── autopilot-core.mjs
+├── autopilot-render.mjs
+├── autopilot.mjs
+├── b3-graphics.mjs
+└── gemini-media.mjs
+├── references/
+├── a6-finishing.md
+├── amber-noir.md
+├── autopilot-production-qa.md
+├── autopilot-runtime.md
+├── autopilot.md
+├── b1-minimal-handdrawn.md
+├── b1-production-qa.md
+├── b2-colorful-handdrawn.md
+├── b3-television.md
+├── cozy-storytelling.md
+├── examples.md
+├── getting-started.md
+├── historical-cartoon.md
+├── omni-flash-prompt-contract.md
+├── prehistoric-dark-comedy.md
+├── storyboard-template.md
+├── style-catalog.md
+├── thumbnail-publishing-kit.md
+└── voice-continuity.md
+├── examples/
+└── b1/
+├── narration.m4a
+└── project.json
+├── assets/
+├── fonts/
+├── Caveat.ttf
+├── NotoSans.ttf
+├── OFL-Caveat.txt
+└── OFL-NotoSans.txt
+├── b3/
+├── accepted-chair-motion.mp4
+├── accepted-chair.png
+├── accepted-dog-motion.mp4
+├── accepted-dog.png
+├── accepted-implementation-board.jpg
+└── reference-manifest.json
+├── b2/
+├── approved-style-board.jpg
+└── approved-style-board.json
+└── b1/
+├── ATTRIBUTION.md
+├── LUCIDE-LICENSE.txt
+├── approved-2026-10-23-contact-sheet.png
+├── approved-2026-10-23-motion-sheet.png
+├── approved-2026-10-23.mp4
+├── approved-2026-10-24-longform-contact-sheet.jpg
+├── approved-baseline.json
+├── approved-production-standard.json
+├── calendar-crayon.png
+├── camera-handdrawn.png
+├── character-acting-reference.png
+├── character-pose-sheet-v6.png
+├── clapper-crayon.png
+├── idea-bulb-crayon.png
+├── idea-note-crayon.png
+├── open-source-crayon.png
+├── script-page-crayon.png
+└── youtube-crayon.png
+└── agents/
+└── openai.yaml
 ```
 
 - `SKILL.md` 是技能入口（触发条件 / 工作流 / 约束），安装时必须位于技能根目录。
 - `references/`、`scripts/`、`assets/` 为该技能自带的参考文档、脚本与素材。
 - `README.upstream.md` 为上游仓库原始说明，保留出处与版权信息。
-- `LICENSE` 为上游许可证原文。
+- `LICENSE` 为上游许可证原件。
 
 ## 安装
 
@@ -36,8 +114,6 @@ git clone https://github.com/simlpandordinary/directing-stickman-videos.git ~/.w
 也可以直接对 AI 说：「把 <https://github.com/simlpandordinary/directing-stickman-videos> 装成 Skill」。
 
 安装后用自然语言触发，例如「火柴人解说 stickman-video-director」「用 directing-stickman-videos 帮我处理这个任务」。
-
-
 
 ## 版权
 
