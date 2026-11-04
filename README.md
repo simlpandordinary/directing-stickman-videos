@@ -24,78 +24,78 @@ Turn topics, requirements, articles or scripts into stickman videos. Director mo
 ├── package-lock.json
 ├── package.json
 ├── tests/
-├── b3-reference-pack.test.mjs
-├── b3-runtime.test.mjs
-└── runtime.test.mjs
+│   ├── b3-reference-pack.test.mjs
+│   ├── b3-runtime.test.mjs
+│   └── runtime.test.mjs
 ├── scripts/
-├── a6_finish.py
-├── align_captions.py
-├── autopilot-core.mjs
-├── autopilot-render.mjs
-├── autopilot.mjs
-├── b3-graphics.mjs
-└── gemini-media.mjs
+│   ├── a6_finish.py
+│   ├── align_captions.py
+│   ├── autopilot-core.mjs
+│   ├── autopilot-render.mjs
+│   ├── autopilot.mjs
+│   ├── b3-graphics.mjs
+│   └── gemini-media.mjs
 ├── references/
-├── a6-finishing.md
-├── amber-noir.md
-├── autopilot-production-qa.md
-├── autopilot-runtime.md
-├── autopilot.md
-├── b1-minimal-handdrawn.md
-├── b1-production-qa.md
-├── b2-colorful-handdrawn.md
-├── b3-television.md
-├── cozy-storytelling.md
-├── examples.md
-├── getting-started.md
-├── historical-cartoon.md
-├── omni-flash-prompt-contract.md
-├── prehistoric-dark-comedy.md
-├── storyboard-template.md
-├── style-catalog.md
-├── thumbnail-publishing-kit.md
-└── voice-continuity.md
+│   ├── a6-finishing.md
+│   ├── amber-noir.md
+│   ├── autopilot-production-qa.md
+│   ├── autopilot-runtime.md
+│   ├── autopilot.md
+│   ├── b1-minimal-handdrawn.md
+│   ├── b1-production-qa.md
+│   ├── b2-colorful-handdrawn.md
+│   ├── b3-television.md
+│   ├── cozy-storytelling.md
+│   ├── examples.md
+│   ├── getting-started.md
+│   ├── historical-cartoon.md
+│   ├── omni-flash-prompt-contract.md
+│   ├── prehistoric-dark-comedy.md
+│   ├── storyboard-template.md
+│   ├── style-catalog.md
+│   ├── thumbnail-publishing-kit.md
+│   └── voice-continuity.md
 ├── examples/
-└── b1/
-├── narration.m4a
-└── project.json
+│   └── b1/
+│       ├── narration.m4a
+│       └── project.json
 ├── assets/
-├── fonts/
-├── Caveat.ttf
-├── NotoSans.ttf
-├── OFL-Caveat.txt
-└── OFL-NotoSans.txt
-├── b3/
-├── accepted-chair-motion.mp4
-├── accepted-chair.png
-├── accepted-dog-motion.mp4
-├── accepted-dog.png
-├── accepted-implementation-board.jpg
-└── reference-manifest.json
-├── b2/
-├── approved-style-board.jpg
-└── approved-style-board.json
-└── b1/
-├── ATTRIBUTION.md
-├── LUCIDE-LICENSE.txt
-├── approved-2026-10-23-contact-sheet.png
-├── approved-2026-10-23-motion-sheet.png
-├── approved-2026-10-23.mp4
-├── approved-2026-10-24-longform-contact-sheet.jpg
-├── approved-baseline.json
-├── approved-production-standard.json
-├── calendar-crayon.png
-├── camera-handdrawn.png
-├── character-acting-reference.png
-├── character-pose-sheet-v6.png
-├── clapper-crayon.png
-├── idea-bulb-crayon.png
-├── idea-note-crayon.png
-├── open-source-crayon.png
-├── script-page-crayon.png
-└── youtube-crayon.png
+│   ├── fonts/
+│   │   ├── Caveat.ttf
+│   │   ├── NotoSans.ttf
+│   │   ├── OFL-Caveat.txt
+│   │   └── OFL-NotoSans.txt
+│   ├── b3/
+│   │   ├── accepted-chair-motion.mp4
+│   │   ├── accepted-chair.png
+│   │   ├── accepted-dog-motion.mp4
+│   │   ├── accepted-dog.png
+│   │   ├── accepted-implementation-board.jpg
+│   │   └── reference-manifest.json
+│   ├── b2/
+│   │   ├── approved-style-board.jpg
+│   │   └── approved-style-board.json
+│   └── b1/
+│       ├── ATTRIBUTION.md
+│       ├── LUCIDE-LICENSE.txt
+│       ├── approved-2026-10-23-contact-sheet.png
+│       ├── approved-2026-10-23-motion-sheet.png
+│       ├── approved-2026-10-23.mp4
+│       ├── approved-2026-10-24-longform-contact-sheet.jpg
+│       ├── approved-baseline.json
+│       ├── approved-production-standard.json
+│       ├── calendar-crayon.png
+│       ├── camera-handdrawn.png
+│       ├── character-acting-reference.png
+│       ├── character-pose-sheet-v6.png
+│       ├── clapper-crayon.png
+│       ├── idea-bulb-crayon.png
+│       ├── idea-note-crayon.png
+│       ├── open-source-crayon.png
+│       ├── script-page-crayon.png
+│       └── youtube-crayon.png
 └── agents/
-└── openai.yaml
+    └── openai.yaml
 ```
 
 - `SKILL.md` 是技能入口（触发条件 / 工作流 / 约束），安装时必须位于技能根目录。
